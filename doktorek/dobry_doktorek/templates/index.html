@@ -1,0 +1,8 @@
+<h1>Good doctor</h1>
+    <p>Masz umówione {{ ilosc_wizyt }} wizyty</p>
+    <h2>Lista Twoich pacjentów</h2>
+    <ol>
+        {% for pacjent in pacjenci %}
+            <li>{{ pacjent.Imie }} {{ pacjent.Nazwisko }}</li>
+        {% endfor %}
+    </ol>
